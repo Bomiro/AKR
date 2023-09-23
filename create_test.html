@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>إنشاء اختبار</title>
+</head>
+<body>
+    <header>
+        <h1>إنشاء اختبار جديد</h1>
+    </header>
+    <main>
+        <form id="testForm">
+            <label for="testName">اسم الاختبار:</label>
+            <input type="text" id="testName" required><br><br>
+
+            <label for="testDescription">وصف الاختبار:</label><br>
+            <textarea id="testDescription" rows="4" required></textarea><br><br>
+
+            <h2>الأسئلة:</h2>
+            <div id="questionsContainer">
+                <!-- سيتم إضافة الأسئلة هنا بواسطة JavaScript -->
+            </div>
+
+            <button type="button" onclick="addQuestion()">إضافة سؤال</button><br><br>
+            <button type="submit">حفظ الاختبار</button>
+        </form>
+    </main>
+</body>
+</html>
